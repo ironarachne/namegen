@@ -23,6 +23,9 @@ func NameGeneratorFromType(origin string) NameGenerator {
 	} else if origin == "spanish" {
 		firstNames = spanishFirstNames
 		lastNames = spanishLastNames
+	} else if origin == "german" {
+		firstNames = germanFirstNames
+		lastNames = germanLastNames
 	}
 
 	return NameGenerator{
