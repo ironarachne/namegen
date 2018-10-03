@@ -8,7 +8,12 @@ func randomItem(items []string) string {
 	return items[rand.Intn(len(items))]
 }
 
-func GetNameByType(origin string) string {
+type NameGenerator struct {
+	FirstNames []string
+	LastNames  []string
+}
+
+func NameGeneratorFromType(origin string) NameGenerator {
 	firstNames := []string{}
 	lastNames := []string{}
 
@@ -17,7 +22,20 @@ func GetNameByType(origin string) string {
 		lastNames = englishLastNames
 	}
 
-	firstName := randomItem(firstNames)
-	lastName := randomItem(lastNames)
-	return firstName + " " + lastName
+	return NameGenerator{
+		FirstNames: firstNames,
+		LastNames:  lastNames,
+	}
+}
+
+func (gen NameGenerator) LastName() string {
+	return randomItem(gen.LastNames)
+}
+
+func (gen NameGenerator) FirstName() string {
+	return randomItem(gen.FirstNames)
+}
+
+func (gen NameGenerator) CompleteName() string {
+	return gen.FirstName() + " " + gen.LastName()
 }
