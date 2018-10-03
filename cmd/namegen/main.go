@@ -6,7 +6,6 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/ironarachne/naminglanguage"
 	"github.com/ironarachne/namegen"
 )
 
