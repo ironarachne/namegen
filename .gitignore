@@ -13,3 +13,6 @@
 
 # Binary output directory
 /build
+
+# JetBrain's IDEs
+/.idea
