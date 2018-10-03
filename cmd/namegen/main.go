@@ -15,9 +15,14 @@ func main() {
 	randomSeed := flag.Int64("s", 0, "Optional random generator seed")
 
 	mode := flag.String("m", "full", "Mode of generation")
+	var list = flag.Bool("l", false, "Print available name lists")
 
 	flag.Parse()
-
+	
+	if *list == true {
+		fmt.Print("Available name lists: \nenglish \nspanish \ngerman \nthai\n\n")
+	}
+	
 	if *randomSeed == 0 {
 		rand.Seed(time.Now().UnixNano())
 	} else {
