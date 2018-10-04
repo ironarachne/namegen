@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"math/rand"
+	"strings"
 	"time"
 
 	"github.com/ironarachne/namegen"
@@ -18,11 +19,19 @@ func main() {
 	var list = flag.Bool("l", false, "Print available name lists")
 
 	flag.Parse()
-	
+
 	if *list == true {
-		fmt.Print("Available name lists: \nenglish \nspanish \ngerman \nthai\n\n")
+		nameLists := []string{
+			"english",
+			"spanish",
+			"german",
+			"thai",
+      "iceland",
+			"korean",
+		}
+		fmt.Printf("Available name lists: \n%s\n\n", strings.Join(nameLists, "\n"))
 	}
-	
+
 	if *randomSeed == 0 {
 		rand.Seed(time.Now().UnixNano())
 	} else {
