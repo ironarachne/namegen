@@ -18,11 +18,11 @@ func main() {
 	var list = flag.Bool("l", false, "Print available name lists")
 
 	flag.Parse()
-	
+
 	if *list == true {
-		fmt.Print("Available name lists: \nenglish \nspanish \ngerman \nthai\n\n")
+		fmt.Print("Available name lists: \nenglish \nspanish \ngerman \nthai \niceland\n\n")
 	}
-	
+
 	if *randomSeed == 0 {
 		rand.Seed(time.Now().UnixNano())
 	} else {
