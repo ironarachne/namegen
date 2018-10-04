@@ -20,7 +20,7 @@ func main() {
 	flag.Parse()
 
 	if *list == true {
-		fmt.Print("Available name lists: \nenglish \nspanish \ngerman \nthai \niceland\n\n")
+		fmt.Print("Available name lists: \nenglish \nspanish \ngerman \nthai \njapanese \niceland\n\n")
 	}
 
 	if *randomSeed == 0 {

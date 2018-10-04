@@ -29,6 +29,9 @@ func NameGeneratorFromType(origin string) NameGenerator {
 	} else if origin == "thai" {
 		firstNames = thaiFirstNames
 		lastNames = thaiLastNames
+	} else if origin == "japanese" {
+		firstNames = japaneseFirstNames
+		lastNames = japaneseLastNames
 	} else if origin == "iceland" {
 		firstNames = icelandicFirstNames
 		lastNames = icelandicLastNames
