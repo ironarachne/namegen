@@ -1,10 +1,83 @@
 package namegen
 
 var (
-
-	spanishFirstNames = []string{"maría", "carmen", "antonio", "lucía", "hugo", "isabel", "pilar", "manuel", "juan", "javier","Sofia","Isabella","Camila","Valentina","Valeria","Mariana","Luciana","Daniela","Gabriela","Victoria","Martina","Lucia","Ximena/Jimena","Sara","Samantha","Maria","José","Emma","Catalina","Julieta","Mía","Antonella","Renata","Emilia","Natalia","Zoe","Nicole","Paula","Amanda","María","Fernanda","Emily","Antonia","Alejandra","Juana","Andrea","Manuela","Ana","Sofia","Guadalupe","Agustina","Elena","María","Bianca","Ariana","Ivanna","Abril","Florencia","Carolina","Maite","Rafaela","Regina","Adriana","Michelle","Alma","Violeta","Salomé","Abigail","Juliana","Valery","Isabel","Montserrat","Allison","Jazmín","Julia","Lola","Luna","Ana","Delfina","Alessandra","Ashley","Olivia","Constanza","Paulina","Rebeca","Carla","María","Paula","Micaela","Fabiana","Miranda","Josefina","Laura","Alexa","María","Alejandra","Luana","Fátima","Sara","Sofía","Isidora","Malena","Romina","Ana","Paula","Mariangel","Amelia","Elizabeth","Aitana","Ariadna","María","Camila","Irene","Silvana","Clara","Magdalena","Sophie","Josefa","Boys'","Names","Santiago","Sebastián","Matías","Mateo","Nicolás","Alejandro","Diego","Samuel","Benjamín","Daniel","Joaquín","Lucas","Tomas","Gabriel","Martín","David","Emiliano","Jerónimo","Emmanuel","Agustín","Juan","Pablo","Juan","José","Andrés","Thiago","Leonardo","Felipe","Ángel","Maximiliano","Christopher","Juan","Diego","Adrián","Pablo","Miguel","Ángel","Rodrigo","Alexander","Ignacio","Emilio","Dylan","Bruno","Carlos","Vicente","Valentino","Santino","Julián","Juan","Sebastián","Aarón","Lautaro","Axel","Fernando","Ian","Christian","Javier","Manuel","Luciano","Francisco","Juan","David","Iker","Facundo","Rafael","Alex","Franco","Antonio","Luis","Isaac","Máximo","Pedro","Ricardo","Sergio","Eduardo","Bautista","Miguel","Cristóbal","Kevin","Jorge","Alonso","Anthony","Simón","Juan","Joshua","Diego","Alejandro","Juan","Manuel","Mario","Alan","Josué","Gael","Hugo","Matthew","Ivan","Damián","Lorenzo","Juan","Martín","Esteban","Álvaro","Valentín","Dante","Jacobo","Jesús","Camilo","Juan","Esteban","Elías"}
-	spanishLastNames = []string{"garcía", "gonzález", "fernández", "rodríguez", "lópez", "martínez", "sánchez", "pérez", "gómez", "martín","Abad","Abalos","Abar","Abascal","Abeita","Abeyta","Abila","Abrantes","Abrego","Abrigo","Abril","Acebo","Acedo","Acero","Acevedo","Aceves","Adames","Adan","Adriano","Africa","Aguado","Aguas","Aguayo","Aguero","Aguila","Aguilar","Aguilera","Aguiniga","Agustin","Ahumada","Aja","Alameda","Alamillo","Alamo","Alanis","Alaniz","Alarcon","Alatorre","Alba","Albarado","Albarran","Alberto","Albo","Albuquerque","Alcala","Alcalde","Alcantar","Alcantara","Alcaraz","Alcazar","Alcocer","Alcon","Alcoser","Alderete","Aldrete","Alegre","Alegria","Alejandre","Alejandro","Alejo","Alejos","Aleman","Aleman","Alfaro","Alfonso","Algarin","Alire","Allende","Alma","Almanza","Almanzar","Almaraz","Almas","Almazan","Almendarez","Almodovar","Almonte","Alo","Alonso","Alonzo","Alpizar","Altamirano","Alvarado","Alvarez","Alvaro","Alvear","Alverez","Alviar","Alvidrez","Alvillar","Alviso","Alvizo","Amado","Amador","Amaya","Amescua","Amezquita","Amo","Amor","Amor"}
-
-
+	spanishFirstNames = []string{
+		// Female First Names
+		"Adriana", "Ainhoa",  "Alba", "Alejandra", "Alicia", "Amparo", "Ana", "Ana Belén", "Ana Isabel", "Ana María", "Andrea", "Ángela", "Ángeles", "Anna", "Antonia", "Asunción", "Aurora", 
+		"Beatriz", "Begoña", "Belén", "Blanca", 
+		"Carla", "Carmen", "Carolina", "Catalina", "Celia", "Clara", "Claudia", "Concepción", "Consuelo", "Cristina", 
+		"Daniela", "Dolores", 
+		"Elena", "Elisa", "Emilia", "Emma", "Encarnación", "Esperanza", "Esther", "Eugenia", "Eva", "Eva María", 
+		"Fátima", "Francisca", 
+		"Gabriela", "Gema", "Gloria", 
+		"Helena", "Hilaria", "Hipólita", 
+		"Inés", "Inmaculada", "Irene", "Isabel", 
+		"Josefa", "Josefina", "Juana", "Julia", 
+		"Laura", "Lidia", "Lorena", "Lourdes", "Lucía", "Luisa", "Luz", 
+		"Magdalena", "Manuela", "Mar", "Margarita", "María", "María Ángeles", "María Antonia", "María del Carmen", "María Concepción", "María Dolores", "María Elena", "María Isabel", "María Jesús", "María José", "María Josefa", "María Luisa", "María del Mar", "María Mercedes", "María Nieves", "María Pilar", "María Rosa", "María Rosario", "María Soledad", "María Teresa", "María Victoria", "Marina", "Marta", "Martina", "Mercedes", "Milagros", "Miriam", "Mónica", "Montserrat", 
+		"Natalia", "Nerea", "Nieves", "Noelia", "Nuria", 
+		"Olga", "Olvido", 
+		"Patricia", "Paula", "Pilar", "Purificación", 
+		"Quirina", 
+		"Raquel", "Remedios", "Rocío", "Rosa", "Rosa María", "Rosario", 
+		"Sandra", "Sara", "Silvia", "Sofía", "Soledad", "Sonia", "Susana", 
+		"Tatiana", "Teresa", 
+		"Úrsula", 
+		"Vanesa", "Verónica", "Victoria", "Virginia", 
+		"Wendy", 
+		"Yolanda", 
+		"Zenobia", 
+		// Male First Names
+		"Aaron", "Adolfo", "Adrián", "Agustín", "Aitor", "Albert", "Alberto", "Alejandro", "Álex", "Alexander", "Alfonso", "Alfredo", "Álvaro", "Andrés", "Ángel", "Antonio", "Arturo", 
+		"Bartolomé", "Borja", 
+		"Carlos", "César", "Christian", "Cristian", "Cristóbal", 
+		"Daniel", "Darío", "David", "Diego", "Domingo", 
+		"Eduardo", "Emilio", "Enrique", "Ernesto", "Esteban", "Eugenio", 
+		"Felipe", "Félix", "Fernando", "Francisco", "Francisco Javier", "Francisco José", 
+		"Gabriel", "Germán", "Gonzalo", "Gregorio", "Guillermo", 
+		"Héctor", "Hipólito", "Hugo", 
+		"Ignacio", "Íker", "Isaac", "Ismael", "Iván", 
+		"Jaime", "Javier", "Jesús", "Joan", "Joaquín", "Joel", "Jonathan", "Jordi", "Jorge", "José", "José Ángel", "José Antonio", "José Carlos", "Jose Francisco", "José Ignacio", "José Luis", "José Manuel", "José María", "José Miguel", "José Ramón", "Josep", "Juan", "Juan Antonio", "Juan Carlos", "Juan Francisco", "Juan José", "Juan Luis", "Juan Manuel", "Julián", "Julio", 
+		"Lorenzo", "Lucas", "Luis", "Luis Miguel", 
+		"Manuel", "Marc", "Marco", "Marcos", "Mariano", "Mario", "Martín", "Mateo", "Miguel", "Miguel Ángel", "Mohamed", 
+		"Nicolás", "Norberto", 
+		"Octavio", "Óscar", 
+		"Pablo", "Pau", "Pedro", 
+		"Quinto", "Quintiliano", "Quique", 
+		"Rafael", "Ramón", "Raúl", "Ricardo", "Roberto", "Rodrigo", "Rubén", 
+		"Salvador", "Samuel", "Santiago", "Sebastián", "Sergio", 
+		"Timoteo", "Tomás", 
+		"Umberto", "Unai", 
+		"Valentín", "Vicente", "Víctor", "Víctor Manuel", 
+		"Wenceslao", 
+		"Xavier", 
+		"Yago",
+		"Zacarías"}
+	spanishLastNames = []string{
+		"Abad", "Ábalos", "Abar", "Abascal", "Abeita", "Abeyta", "Abila", "Abrantes", "Abrego", "Abrigo", "Abril", "Acebo", "Acedo", "Acero", "Acevedo", "Aceves", "Adames", "Adán", "Adriano", "África", "Aguado", "Aguas", "Aguayo", "Agüero", "Águila", "Aguilar", "Aguilar", "Aguilera", "Aguiniga", "Agustín", "Ahumada", "Aja", "Alameda", "Alamillo", "Álamo", "Alanis", "Alaniz", "Alarcón", "Alatorre", "Alba", "Albarado", "Albarrán", "Alberto", "Albo", "Albuquerque", "Alcalá", "Alcalde", "Alcantar", "Alcántara", "Alcaraz", "Alcázar", "Alcócer", "Alcón", "Alcóser", "Alderete", "Aldrete", "Alegre", "Alegría", "Alejandre", "Alejandro", "Alejo", "Alejos", "Alemán", "Alfaro", "Alfonso", "Algarín", "Alire", "Allende", "Alma", "Almanza", "Almanzar", "Almaraz", "Almas", "Almazán", "Almendárez", "Almodóvar", "Almonte", "Alo", "Alonso", "Alonzo", "Alpizar", "Altamirano", "Alvarado", "Álvarez", "Álvaro", "Alvear", "Alvérez", "Alviar", "Alvidrez", "Alvillar", "Alviso", "Alvizo", "Amado", "Amador", "Amaya", "Amescua", "Amezquita", "Amo", "Amor", "Arias", 
+		"Benitez", "Bielsa", "Blanco", "Blasco", "Blásquez", "Bravo", "Bueno", 
+		"Caballero", "Cabrera", "Calvo", "Campos", "Cano", "Carmona", "Carrasco", "Castillo", "Castro", "Cortes", "Crespo", "Cruz", 
+		"Delgado", "Díaz", "Díez", "Domínguez", "Durán", 
+		"Echevarría", "Echeverría", "Esteban", "Etxeberria", 
+		"Fernández", "Ferrer", "Flores", "Fraile", "Fuentes", 
+		"Gallardo", "Gallego", "Gámez", "García", "Garrido", "Gil", "Giménez", "Gómez", "González", "Guerrero", "Gutiérrez", 
+		"Hernández", "Herrera", "Herrero", "Hidalgo", 
+		"Ibáñez", "Iglesias", "Irureta", "Iruretagoyena", 
+		"Jiménez", "Jémez", 
+		"Kaiser", 
+		"León", "López", "Lorenzo", "Lozano", 
+		"Marín", "Márquez", "Martín", "Martínez", "Medina", "Méndez", "Molina", "Montero", "Montoro", "Mora", "Morales", "Moreno", "Moya", "Muñoz", 
+		"Navarro", "Nieto", "Núñez", 
+		"Ortega", "Ortiz", 
+		"Parra", "Pascual", "Pastor", "Peña", "Pérez", "Prieto", 
+		"Quiñones", "Quiñónez", 
+		"Ramírez", "Ramos", "Reyes", "Rodríguez", "Rojas", "Román", "Romero", "Rubio", "Ruíz", 
+		"Sáez", "Sánchez", "Santana", "Santiago", "Santos", "Sanz", "Serrano", "Soler", "Soto", "Suárez", 
+		"Torres", "Trinidad", 
+		"Ugarte", "Ulloa", "Urbizu", "Uribe", 
+		"Vargas", "Vázquez", "Vega", "Velasco", "Vicente", "Vidal",
+		"Xerez", "Ximénez", 
+		"Yánez", "Yepes", "Yuste", 
+		"Zabala", "Zambrano", "Zamora", "Zamorano"}
 )
 
