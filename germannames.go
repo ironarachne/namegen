@@ -7,17 +7,17 @@ var (
 		"Barbara", "Bettina", "Berta", "Bianca", "Birgit", "Brigitte",
 		"Carina", "Caroline", "Celina", "Chiara", "Christina", "Christine", "Clara", "Claudia", "Cornelia",
 		"Daniela", "Denise", "Doris",
-		"Elena", "Elisa", "Elisabeth", "Ella", "Emely", "Emilia", "Emily", "Emma", "Eva", "Eva-Maria",
+		"Elena", "Eleonora", "Elisa", "Elisabeth", "Ella", "Emely", "Emilia", "Emily", "Emma", "Eva", "Eva-Maria",
 		"Fiona", "Franziska",
 		"Hanna", "Hannah", "Helena",
-		"Ines", "Iris", "Isabel", "Isabella",
+		"Ines", "Inga", "Inge", "Iris", "Isabel", "Isabella",
 		"Jacqueline", "Jacquline", "Jana", "Janine", "Jasmin", "Jennifer", "Jessica", "Johanna", "Julia",
 		"Karin", "Katharina", "Katrin", "Kerstin", "Konstanze",
 		"Lara", "Larissa", "Laura", "Lea", "Lena", "Leonie", "Lilly", "Lina", "Lisa", "Livia", "Luisa",
 		"Magdalena", "Maja", "Manuela", "Maria", "Marie", "Marion", "Marlene", "Martina", "Melanie", "Melina", "Mia", "Michaela", "Michelle", "Miriam", "Mona", "Monika",
 		"Nadine", "Natalie", "Nicole", "Nina", "Nora",
 		"Patricia", "Paula", "Petra", "Pia",
-		"Rebecca", "Rosa",
+		"Rebecca", "Rosa", "Rita",
 		"Sabine", "Sabrina", "Sandra", "Sarah", "Selina", "Silvia", "Simone", "Sonja", "Sophia", "Sophie", "Stefanie", "Susanne",
 		"Tamara", "Tanja", "Theresa",
 		"Valentina", "Valerie", "Vanessa", "Verena", "Viktoria",
@@ -26,7 +26,7 @@ var (
 
 		// male firstnames
 		"Adrian", "Alexander", "Andreas", "Anton",
-		"Ben", "Benedikt", "Benjamin", "Bernd", "Bernhard",
+		"Ben", "Benedikt", "Benjamin", "Bernd", "Bernhard", "Björn",
 		"Christian", "Christoph", "Christopher", "Clemens",
 		"Daniel", "David", "Dirk", "Dominik",
 		"Elias", "Emanuel", "Emil", "Erik",
@@ -41,10 +41,10 @@ var (
 		"Oliver", "Oskar", "Oswald",
 		"Pascal", "Patrick", "Patrik", "Paul", "Peter", "Philipp",
 		"Ralph", "Raphael", "Reinhard", "René", "Richard", "Robert", "Roland", "Roman",
-		"Samuel", "Sandro", "Sascha", "Sebastian", "Simon", "Stefan",
+		"Samuel", "Sandro", "Sascha", "Sebastian", "Simon", "Stefan", "Stephan",
 		"Theo", "Theodor", "Thomas", "Tim", "Tobias",
 		"Valentin", "Vincent",
-		"Werner", "Wolfgang",
+		"Walter", "Werner", "Wolfgang", "Wilhelm",
 
 
 	}
