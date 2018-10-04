@@ -15,13 +15,14 @@ type NameGenerator struct {
 
 func NameGeneratorFromType(origin string) NameGenerator {
 	nameGenerators := map[string]NameGenerator{
-		"english": {englishFirstNames, englishLastNames},
-		"spanish": {spanishFirstNames, spanishLastNames},
-		"german":  {germanFirstNames, germanLastNames},
-		"thai":    {thaiFirstNames, thaiLastNames},
-		"korean":  {koreanFirstNames, koreanLastNames},
-    "iceland": {icelandicFirstNames, icelandicLastNames},
-    "dutch":   {dutchFirstNames, dutchLastNames},
+		"english":    {englishFirstNames, englishLastNames},
+		"spanish":    {spanishFirstNames, spanishLastNames},
+		"german":     {germanFirstNames, germanLastNames},
+		"thai":       {thaiFirstNames, thaiLastNames},
+		"korean":     {koreanFirstNames, koreanLastNames},
+		"iceland":    {icelandicFirstNames, icelandicLastNames},
+		"dutch":      {dutchFirstNames, dutchLastNames},
+		"anglosaxon": {anglosaxonFirstNames, anglosaxonLastNames},
 	}
 
 	return nameGenerators[origin]
