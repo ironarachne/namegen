@@ -21,6 +21,7 @@ func NameGeneratorFromType(origin string) NameGenerator {
 		"thai":    {thaiFirstNames, thaiLastNames},
 		"korean":  {koreanFirstNames, koreanLastNames},
     "iceland": {icelandicFirstNames, icelandicLastNames},
+    "dutch":   {dutchFirstNames, dutchLastNames},
 	}
 
 	return nameGenerators[origin]
