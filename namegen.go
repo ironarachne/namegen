@@ -14,33 +14,16 @@ type NameGenerator struct {
 }
 
 func NameGeneratorFromType(origin string) NameGenerator {
-	firstNames := []string{}
-	lastNames := []string{}
-
-	if origin == "english" {
-		firstNames = englishFirstNames
-		lastNames = englishLastNames
-	} else if origin == "spanish" {
-		firstNames = spanishFirstNames
-		lastNames = spanishLastNames
-	} else if origin == "german" {
-		firstNames = germanFirstNames
-		lastNames = germanLastNames
-	} else if origin == "thai" {
-		firstNames = thaiFirstNames
-		lastNames = thaiLastNames
-	} else if origin == "japanese" {
-		firstNames = japaneseFirstNames
-		lastNames = japaneseLastNames
-	} else if origin == "iceland" {
-		firstNames = icelandicFirstNames
-		lastNames = icelandicLastNames
+	nameGenerators := map[string]NameGenerator{
+		"english": {englishFirstNames, englishLastNames},
+		"spanish": {spanishFirstNames, spanishLastNames},
+		"german":  {germanFirstNames, germanLastNames},
+		"thai":    {thaiFirstNames, thaiLastNames},
+		"korean":  {koreanFirstNames, koreanLastNames},
+    "iceland": {icelandicFirstNames, icelandicLastNames},
 	}
 
-	return NameGenerator{
-		FirstNames: firstNames,
-		LastNames:  lastNames,
-	}
+	return nameGenerators[origin]
 }
 
 func (gen NameGenerator) LastName() string {
