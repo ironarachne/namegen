@@ -15,6 +15,9 @@ func GetNameByType(origin string) string {
 	if origin == "english" {
 		firstNames = englishFirstNames
 		lastNames = englishLastNames
+	} else if origin == "dutch" {
+		firstNames = dutchFirstNames
+		lastNames = dutchLastNames
 	}
 
 	firstName := randomItem(firstNames)
