@@ -1,18 +1,16 @@
 package namegen
 
 import (
-	"math/rand"
+	"github.com/ironarachne/utility"
 )
 
-func randomItem(items []string) string {
-	return items[rand.Intn(len(items))]
-}
-
+// NameGenerator is a set of names to use
 type NameGenerator struct {
 	FirstNames []string
 	LastNames  []string
 }
 
+// NameGeneratorFromType sets up types of names
 func NameGeneratorFromType(origin string) NameGenerator {
 	nameGenerators := map[string]NameGenerator{
 		"english":    {englishFirstNames, englishLastNames},
@@ -29,14 +27,17 @@ func NameGeneratorFromType(origin string) NameGenerator {
 	return nameGenerators[origin]
 }
 
+// LastName returns a last name
 func (gen NameGenerator) LastName() string {
-	return randomItem(gen.LastNames)
+	return utility.RandomItem(gen.LastNames)
 }
 
+// FirstName returns a first name
 func (gen NameGenerator) FirstName() string {
-	return randomItem(gen.FirstNames)
+	return utility.RandomItem(gen.FirstNames)
 }
 
+// CompleteName returns a complete name
 func (gen NameGenerator) CompleteName() string {
 	return gen.FirstName() + " " + gen.LastName()
 }
