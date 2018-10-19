@@ -1,8 +1,7 @@
 package namegen
 
 var (
-	indonesianFirstNames = []string{
-		// female first names
+	indonesianFemaleFirstNames = []string{
 		"Ade", "Adinda", "Adriani", "Afni", "Afriani", "Agnes", "Agustian", "Agustin", "Agustina", "Agustini", "Aini", "Ajeng", "Amalia", "Ambar", "Ambarwati", "Amelia",
 		"Amanda", "Ana", "Ananda", "Anastasia", "Andina", "Andini", "Andriana", "Andriani", "Andriyani", "Angelia", "Angelina", "Anggi",
 		"Anggia", "Anggit", "Anggita", "Anggraeni", "Anggraini", "Anggun", "Ani", "Anik", "Anindita", "Anita", "Anna", "Apriani",
@@ -49,8 +48,9 @@ var (
 		"Wulan", "Wulandari", "Wulansari", "Wuri", "Yani", "Yanti", "Yayuk", "Yeni", "Yenni", "Yenny", "Yohana", "Yolanda",
 		"Yuanita", "Yuli", "Yulia", "Yuliana", "Yuliani", "Yulianti", "Yulita", "Yuni", "Yunia", "Yuniar", "Yuniarti", "Yunita",
 		"Yusnita", "Yuyun",
+	}
 
-		// male firstnames
+	indonesianMaleFirstNames = []string{
 		"Aan", "Ade", "Adhi", "Adhitya", "Adi", "Aditia", "Aditya", "Adityo", "Adrian", "Ady", "Afrizal", "Agung",
 		"Agus", "Agustian", "Agustinus", "Aji", "Alam", "Alamsyah", "Alfian", "Ali", "Ananda",
 		"Anang", "Andhika", "Andi", "Andika", "Andre", "Andreas", "Andri", "Andrian", "Andry", "Andy", "Angga",

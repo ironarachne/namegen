@@ -14,13 +14,14 @@ type NameGenerator struct {
 // NameGeneratorFromType sets up types of names
 func NameGeneratorFromType(origin string) NameGenerator {
 	nameGenerators := map[string]NameGenerator{
-		"dutch":     {dutchMaleFirstNames, dutchFemaleFirstNames, dutchLastNames},
-		"english":   {englishMaleFirstNames, englishFemaleFirstNames, englishLastNames},
-		"german":    {germanMaleFirstNames, germanFemaleFirstNames, germanLastNames},
-		"greek":     {greekMaleFirstNames, greekFemaleFirstNames, greekLastNames},
-		"icelandic": {icelandicMaleFirstNames, icelandicFemaleFirstNames, icelandicLastNames},
-		"korean":    {koreanMaleFirstNames, koreanFemaleFirstNames, koreanLastNames},
-		"spanish":   {spanishMaleFirstNames, spanishFemaleFirstNames, spanishLastNames},
+		"dutch":      {dutchMaleFirstNames, dutchFemaleFirstNames, dutchLastNames},
+		"english":    {englishMaleFirstNames, englishFemaleFirstNames, englishLastNames},
+		"german":     {germanMaleFirstNames, germanFemaleFirstNames, germanLastNames},
+		"greek":      {greekMaleFirstNames, greekFemaleFirstNames, greekLastNames},
+		"icelandic":  {icelandicMaleFirstNames, icelandicFemaleFirstNames, icelandicLastNames},
+		"indonesian": {indonesianMaleFirstNames, indonesianFemaleFirstNames, indonesianLastNames},
+		"korean":     {koreanMaleFirstNames, koreanFemaleFirstNames, koreanLastNames},
+		"spanish":    {spanishMaleFirstNames, spanishFemaleFirstNames, spanishLastNames},
 	}
 
 	return nameGenerators[origin]
