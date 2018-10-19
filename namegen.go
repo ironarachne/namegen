@@ -6,23 +6,21 @@ import (
 
 // NameGenerator is a set of names to use
 type NameGenerator struct {
-	FirstNames []string
-	LastNames  []string
+	MaleFirstNames   []string
+	FemaleFirstNames []string
+	LastNames        []string
 }
 
 // NameGeneratorFromType sets up types of names
 func NameGeneratorFromType(origin string) NameGenerator {
 	nameGenerators := map[string]NameGenerator{
-		"english":    {englishFirstNames, englishLastNames},
-		"spanish":    {spanishFirstNames, spanishLastNames},
-		"german":     {germanFirstNames, germanLastNames},
-		"thai":       {thaiFirstNames, thaiLastNames},
-		"korean":     {koreanFirstNames, koreanLastNames},
-		"iceland":    {icelandicFirstNames, icelandicLastNames},
-		"dutch":      {dutchFirstNames, dutchLastNames},
-		"anglosaxon": {anglosaxonFirstNames, anglosaxonLastNames},
-		"greek":      {greekFirstNames, greekLastNames},
-		"indonesian": {indonesianFirstNames, indonesianLastNames},
+		"dutch":     {dutchMaleFirstNames, dutchFemaleFirstNames, dutchLastNames},
+		"english":   {englishMaleFirstNames, englishFemaleFirstNames, englishLastNames},
+		"german":    {germanMaleFirstNames, germanFemaleFirstNames, germanLastNames},
+		"greek":     {greekMaleFirstNames, greekFemaleFirstNames, greekLastNames},
+		"icelandic": {icelandicMaleFirstNames, icelandicFemaleFirstNames, icelandicLastNames},
+		"korean":    {koreanMaleFirstNames, koreanFemaleFirstNames, koreanLastNames},
+		"spanish":   {spanishMaleFirstNames, spanishFemaleFirstNames, spanishLastNames},
 	}
 
 	return nameGenerators[origin]
@@ -34,11 +32,18 @@ func (gen NameGenerator) LastName() string {
 }
 
 // FirstName returns a first name
-func (gen NameGenerator) FirstName() string {
-	return utility.RandomItem(gen.FirstNames)
+func (gen NameGenerator) FirstName(gender string) string {
+	firstNames := gen.MaleFirstNames
+	if gender == "female" {
+		firstNames = gen.FemaleFirstNames
+	} else if gender == "both" {
+		firstNames = append(firstNames, gen.FemaleFirstNames...)
+	}
+
+	return utility.RandomItem(firstNames)
 }
 
 // CompleteName returns a complete name
-func (gen NameGenerator) CompleteName() string {
-	return gen.FirstName() + " " + gen.LastName()
+func (gen NameGenerator) CompleteName(gender string) string {
+	return gen.FirstName(gender) + " " + gen.LastName()
 }

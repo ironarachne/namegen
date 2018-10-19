@@ -1,30 +1,7 @@
 package namegen
 
 var (
-	germanFirstNames = []string{
-		// female first names
-		"Alexandra", "Alexandrea", "Algelika", "Alina", "Amelie", "Andrea", "Angelina", "Anita", "Anja", "Anna", "Anna-Lena", "Annika", "Astrid",
-		"Barbara", "Bettina", "Berta", "Bianca", "Birgit", "Brigitte",
-		"Carina", "Caroline", "Celina", "Chiara", "Christina", "Christine", "Clara", "Claudia", "Cornelia",
-		"Daniela", "Denise", "Doris",
-		"Elena", "Eleonora", "Elisa", "Elisabeth", "Ella", "Emely", "Emilia", "Emily", "Emma", "Eva", "Eva-Maria",
-		"Fiona", "Franziska",
-		"Hanna", "Hannah", "Helena",
-		"Ines", "Inga", "Inge", "Iris", "Isabel", "Isabella",
-		"Jacqueline", "Jacquline", "Jana", "Janine", "Jasmin", "Jennifer", "Jessica", "Johanna", "Julia",
-		"Karin", "Katharina", "Katrin", "Kerstin", "Konstanze",
-		"Lara", "Larissa", "Laura", "Lea", "Lena", "Leonie", "Lilly", "Lina", "Lisa", "Livia", "Luisa",
-		"Magdalena", "Maja", "Manuela", "Maria", "Marie", "Marion", "Marlene", "Martina", "Melanie", "Melina", "Mia", "Michaela", "Michelle", "Miriam", "Mona", "Monika",
-		"Nadine", "Natalie", "Nicole", "Nina", "Nora",
-		"Patricia", "Paula", "Petra", "Pia",
-		"Rebecca", "Rosa", "Rita",
-		"Sabine", "Sabrina", "Sandra", "Sarah", "Selina", "Silvia", "Simone", "Sonja", "Sophia", "Sophie", "Stefanie", "Susanne",
-		"Tamara", "Tanja", "Theresa",
-		"Valentina", "Valerie", "Vanessa", "Verena", "Viktoria",
-		"Yvonne",
-		"Zafira",
-
-		// male firstnames
+	germanMaleFirstNames = []string{
 		"Adrian", "Alexander", "Andreas", "Anton",
 		"Ben", "Benedikt", "Benjamin", "Bernd", "Bernhard", "Björn",
 		"Christian", "Christoph", "Christopher", "Clemens",
@@ -45,8 +22,29 @@ var (
 		"Theo", "Theodor", "Thomas", "Tim", "Tobias",
 		"Valentin", "Vincent",
 		"Walter", "Werner", "Wolfgang", "Wilhelm",
+	}
 
-
+	germanFemaleFirstNames = []string{
+		"Alexandra", "Alexandrea", "Algelika", "Alina", "Amelie", "Andrea", "Angelina", "Anita", "Anja", "Anna", "Anna-Lena", "Annika", "Astrid",
+		"Barbara", "Bettina", "Berta", "Bianca", "Birgit", "Brigitte",
+		"Carina", "Caroline", "Celina", "Chiara", "Christina", "Christine", "Clara", "Claudia", "Cornelia",
+		"Daniela", "Denise", "Doris",
+		"Elena", "Eleonora", "Elisa", "Elisabeth", "Ella", "Emely", "Emilia", "Emily", "Emma", "Eva", "Eva-Maria",
+		"Fiona", "Franziska",
+		"Hanna", "Hannah", "Helena",
+		"Ines", "Inga", "Inge", "Iris", "Isabel", "Isabella",
+		"Jacqueline", "Jacquline", "Jana", "Janine", "Jasmin", "Jennifer", "Jessica", "Johanna", "Julia",
+		"Karin", "Katharina", "Katrin", "Kerstin", "Konstanze",
+		"Lara", "Larissa", "Laura", "Lea", "Lena", "Leonie", "Lilly", "Lina", "Lisa", "Livia", "Luisa",
+		"Magdalena", "Maja", "Manuela", "Maria", "Marie", "Marion", "Marlene", "Martina", "Melanie", "Melina", "Mia", "Michaela", "Michelle", "Miriam", "Mona", "Monika",
+		"Nadine", "Natalie", "Nicole", "Nina", "Nora",
+		"Patricia", "Paula", "Petra", "Pia",
+		"Rebecca", "Rosa", "Rita",
+		"Sabine", "Sabrina", "Sandra", "Sarah", "Selina", "Silvia", "Simone", "Sonja", "Sophia", "Sophie", "Stefanie", "Susanne",
+		"Tamara", "Tanja", "Theresa",
+		"Valentina", "Valerie", "Vanessa", "Verena", "Viktoria",
+		"Yvonne",
+		"Zafira",
 	}
 
 	germanLastNames = []string{

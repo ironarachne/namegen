@@ -1,23 +1,7 @@
 package namegen
 
 var (
-	koreanFirstNames = []string{
-		// female first names
-		"AeCha",
-		"BongCha",
-		"ChinSun", "ChoonHee", "ChunHei", "ChungCha", "ChungCha",
-		"Da", "Dae", "Du",
-		"Eui", "Eun", "EunAe", "EunJung", "EunKyung",
-		"Gi", "Goo",
-		"Hae", "HaeWon", "HeeYoung", "HeiRyung", "HeiRan", "HoSook", "Hoe", "HwaYoung", "Hyo", "HyoSonn", "Hyun", "HyunJae", "HyunAe", "HyunOk",
-		"JaeHwa", "Jee", "Ji", "JinAe", "JinKyong",
-		"Ki", "KyungMi", "KyungSoon", "KyungHu",
-		"Mee", "MiCha", "MiKyong", "MiSun", "MiYoung", "MiCha", "Mihi", "MiOk", "Min", "MinJee", "MinJung", "Mishil", "MunHee", "MyungHee", "MyungOk",
-		"SangHee", "SoYoung", "Soo", "SooJin", "SooMin", "SooYun", "Sook", "SoonBok", "SunHee", "SunJung", "SunHi", "Sung",
-		"Whan", "Woong",
-		"Yon", "Yoon", "YoungMi", "YoungIl", "YoungSoon", "Yun", "YunHee",
-
-		// male firstnames
+	koreanMaleFirstNames = []string{
 		"BaekHyeon", "BeomSeok", "Bitgaram",
 		"BonHwa",
 		"ChinHae", "ChinHwa", "ChinMae", "Chul", "ChulMoo", "ChungAe", "ChungHee", "ChungHo", "Courage",
@@ -32,6 +16,22 @@ var (
 		"Tae",
 		"WonShik",
 		"Yongsun", "Young", "YoungJae", "YoungSoo",
+	}
+
+	koreanFemaleFirstNames = []string{
+		"AeCha",
+		"BongCha",
+		"ChinSun", "ChoonHee", "ChunHei", "ChungCha", "ChungCha",
+		"Da", "Dae", "Du",
+		"Eui", "Eun", "EunAe", "EunJung", "EunKyung",
+		"Gi", "Goo",
+		"Hae", "HaeWon", "HeeYoung", "HeiRyung", "HeiRan", "HoSook", "Hoe", "HwaYoung", "Hyo", "HyoSonn", "Hyun", "HyunJae", "HyunAe", "HyunOk",
+		"JaeHwa", "Jee", "Ji", "JinAe", "JinKyong",
+		"Ki", "KyungMi", "KyungSoon", "KyungHu",
+		"Mee", "MiCha", "MiKyong", "MiSun", "MiYoung", "MiCha", "Mihi", "MiOk", "Min", "MinJee", "MinJung", "Mishil", "MunHee", "MyungHee", "MyungOk",
+		"SangHee", "SoYoung", "Soo", "SooJin", "SooMin", "SooYun", "Sook", "SoonBok", "SunHee", "SunJung", "SunHi", "Sung",
+		"Whan", "Woong",
+		"Yon", "Yoon", "YoungMi", "YoungIl", "YoungSoon", "Yun", "YunHee",
 	}
 
 	koreanLastNames = []string{

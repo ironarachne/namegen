@@ -12,7 +12,8 @@ import (
 
 func main() {
 	numberOfNames := flag.Int("n", 1, "Number of names to generate")
-	origin := flag.String("o", "english", "Origin of names (e.g., english, conlang, etc.)")
+	gender := flag.String("g", "both", "Gender (male, female, or both)")
+	origin := flag.String("o", "english", "Origin of names (e.g., english, spanish, etc.)")
 	randomSeed := flag.Int64("s", 0, "Optional random generator seed")
 
 	mode := flag.String("m", "full", "Mode of generation")
@@ -22,13 +23,12 @@ func main() {
 
 	if *list == true {
 		nameLists := []string{
+			"dutch",
 			"english",
-			"spanish",
 			"german",
-			"thai",
-			"iceland",
-			"korean",
 			"greek",
+			"korean",
+			"spanish",
 		}
 		fmt.Printf("Available name lists: \n%s\n\n", strings.Join(nameLists, "\n"))
 	}
@@ -46,9 +46,9 @@ func main() {
 
 		switch *mode {
 		case "full":
-			output = generator.CompleteName()
+			output = generator.CompleteName(*gender)
 		case "firstname":
-			output = generator.FirstName()
+			output = generator.FirstName(*gender)
 		case "lastname":
 			output = generator.LastName()
 		default:
