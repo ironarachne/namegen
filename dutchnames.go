@@ -3,8 +3,8 @@ package namegen
 var (
 	// https://en.wikipedia.org/wiki/Category:Dutch_masculine_given_names
 	// https://en.wikipedia.org/wiki/Category:Dutch_feminine_given_names
-	dutchFirstNames = []string{
-		"Aad", // male
+	dutchMaleFirstNames = []string{
+		"Aad",
 		"Aart",
 		"Ab",
 		"Abraham",
@@ -339,7 +339,10 @@ var (
 		"Wout",
 		"Wouter",
 		"Zeger",
-		"Ada", // female
+	}
+
+	dutchFemaleFirstNames = []string{
+		"Ada",
 		"Adriana",
 		"Agatha",
 		"Alberta",
@@ -492,7 +495,7 @@ var (
 		"Willemina",
 		"Wilma",
 		"Yvette",
-		"Yvonne" }
+		"Yvonne"}
 
 	// https://en.wikipedia.org/wiki/List_of_Dutch_family_names
 	dutchLastNames = []string{
@@ -568,5 +571,5 @@ var (
 		"van der westhuizen",
 		"willems",
 		"de wit",
-		"van zijl" }
+		"van zijl"}
 )
