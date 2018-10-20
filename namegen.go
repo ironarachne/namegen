@@ -14,6 +14,7 @@ type NameGenerator struct {
 // NameGeneratorFromType sets up types of names
 func NameGeneratorFromType(origin string) NameGenerator {
 	nameGenerators := map[string]NameGenerator{
+		"anglosaxon": {anglosaxonMaleFirstNames, anglosaxonFemaleFirstNames, anglosaxonLastNames},
 		"dutch":      {dutchMaleFirstNames, dutchFemaleFirstNames, dutchLastNames},
 		"english":    {englishMaleFirstNames, englishFemaleFirstNames, englishLastNames},
 		"fantasy":    {fantasyMaleFirstNames, fantasyFemaleFirstNames, fantasyLastNames},

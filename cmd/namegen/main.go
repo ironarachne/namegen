@@ -23,6 +23,7 @@ func main() {
 
 	if *list == true {
 		nameLists := []string{
+			"anglosaxon",
 			"dutch",
 			"english",
 			"fantasy",
