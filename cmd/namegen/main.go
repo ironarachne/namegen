@@ -29,6 +29,7 @@ func main() {
 			"german",
 			"greek",
 			"indonesian",
+			"japanese",
 			"korean",
 			"spanish",
 		}
