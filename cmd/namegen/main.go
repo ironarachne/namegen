@@ -25,6 +25,7 @@ func main() {
 		nameLists := []string{
 			"dutch",
 			"english",
+			"fantasy",
 			"german",
 			"greek",
 			"indonesian",
