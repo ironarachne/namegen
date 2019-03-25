@@ -1,7 +1,7 @@
 package namegen
 
 import (
-	"github.com/ironarachne/utility"
+	"github.com/ironarachne/random"
 )
 
 // NameGenerator is a set of names to use
@@ -34,7 +34,7 @@ func NameGeneratorFromType(origin string) NameGenerator {
 
 // LastName returns a last name
 func (gen NameGenerator) LastName() string {
-	return utility.RandomItem(gen.LastNames)
+	return random.Item(gen.LastNames)
 }
 
 // FirstName returns a first name
@@ -46,7 +46,7 @@ func (gen NameGenerator) FirstName(gender string) string {
 		firstNames = append(firstNames, gen.FemaleFirstNames...)
 	}
 
-	return utility.RandomItem(firstNames)
+	return random.Item(firstNames)
 }
 
 // CompleteName returns a complete name
