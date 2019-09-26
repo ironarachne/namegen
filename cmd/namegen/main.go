@@ -8,13 +8,14 @@ import (
 	"time"
 
 	"github.com/ironarachne/namegen"
+	"github.com/ironarachne/random"
 )
 
 func main() {
 	numberOfNames := flag.Int("n", 1, "Number of names to generate")
 	gender := flag.String("g", "both", "Gender (male, female, or both)")
 	origin := flag.String("o", "english", "Origin of names (e.g., english, spanish, etc.)")
-	randomSeed := flag.Int64("s", 0, "Optional random generator seed")
+	randomSeed := flag.String("s", "none", "Optional random generator seed (alphanumeric)")
 
 	mode := flag.String("m", "full", "Mode of generation")
 	var list = flag.Bool("l", false, "Print available name lists")
@@ -39,10 +40,10 @@ func main() {
 		fmt.Printf("Available name lists: \n%s\n\n", strings.Join(nameLists, "\n"))
 	}
 
-	if *randomSeed == 0 {
+	if *randomSeed == "none" {
 		rand.Seed(time.Now().UnixNano())
 	} else {
-		rand.Seed(*randomSeed)
+		random.SeedFromString(*randomSeed)
 	}
 
 	generator := namegen.NameGeneratorFromType(*origin)
