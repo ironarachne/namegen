@@ -12,7 +12,7 @@ type NameGenerator struct {
 }
 
 // NameGeneratorFromType sets up types of names
-func NameGeneratorFromType(origin string) NameGenerator {
+func NameGeneratorFromType(origin, gender string) NameGenerator {
 	nameGenerators := map[string]NameGenerator{
 		"anglosaxon": {anglosaxonMaleFirstNames, anglosaxonFemaleFirstNames, anglosaxonLastNames},
 		"dutch":      {dutchMaleFirstNames, dutchFemaleFirstNames, dutchLastNames},
@@ -21,7 +21,7 @@ func NameGeneratorFromType(origin string) NameGenerator {
 		"fantasy":    {fantasyMaleFirstNames, fantasyFemaleFirstNames, fantasyLastNames},
 		"german":     {germanMaleFirstNames, germanFemaleFirstNames, germanLastNames},
 		"greek":      {greekMaleFirstNames, greekFemaleFirstNames, greekLastNames},
-		"icelandic":  {icelandicMaleFirstNames, icelandicFemaleFirstNames, icelandicLastNames},
+		"icelandic":  {getIcelandicFirstNames(), getIcelandicFirstNames(), getIcelandicLastNames(gender)},
 		"indonesian": {indonesianMaleFirstNames, indonesianFemaleFirstNames, indonesianLastNames},
 		"japanese":   {japaneseMaleFirstNames, japaneseFemaleFirstNames, japaneseLastNames},
 		"korean":     {koreanMaleFirstNames, koreanFemaleFirstNames, koreanLastNames},

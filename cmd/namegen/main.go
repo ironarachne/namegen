@@ -46,7 +46,7 @@ func main() {
 		random.SeedFromString(*randomSeed)
 	}
 
-	generator := namegen.NameGeneratorFromType(*origin)
+	generator := namegen.NameGeneratorFromType(*origin, *gender)
 
 	output := ""
 	for i := 0; i < *numberOfNames; i++ {
