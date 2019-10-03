@@ -16,7 +16,7 @@ func NameGeneratorFromType(origin, gender string) NameGenerator {
 	nameGenerators := map[string]NameGenerator{
 		"anglosaxon": {anglosaxonMaleFirstNames, anglosaxonFemaleFirstNames, anglosaxonLastNames},
 		"dutch":      {dutchMaleFirstNames, dutchFemaleFirstNames, dutchLastNames},
-		"dwarf": 	  {dwarfMaleFirstNames, dwarfFemaleFirstNames, getDwarfLastNames(gender)},
+		"dwarf":      {dwarfMaleFirstNames, dwarfFemaleFirstNames, getDwarfLastNames(gender)},
 		"elf":        {elfMaleFirstNames, elfFemaleFirstNames, elfLastNames},
 		"english":    {englishMaleFirstNames, englishFemaleFirstNames, englishLastNames},
 		"fantasy":    {fantasyMaleFirstNames, fantasyFemaleFirstNames, fantasyLastNames},
