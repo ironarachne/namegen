@@ -17,5 +17,5 @@
 # JetBrain's IDEs
 /.idea
 
-#vendor
+# Vendor
 vendor/
