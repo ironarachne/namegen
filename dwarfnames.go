@@ -1,6 +1,7 @@
 package namegen
 
 var (
+	// Source: https://www.fantasynamegenerators.com/dwarf_names.php
 	dwarfFemaleFirstNames = []string{
 		"Dalorbaehulda",
 		"Gabrusli",
