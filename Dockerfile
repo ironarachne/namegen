@@ -1,5 +1,5 @@
 # base image for building the binary
-FROM golang:1.11-alpine AS base
+FROM golang:1.17-alpine AS base
 # $GOPATH is /go
 COPY . /go/src/github.com/ironarachne/namegen
 # the output is located in the working directory without fileextension

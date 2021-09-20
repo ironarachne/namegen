@@ -1,9 +1,5 @@
 package namegen
 
-import (
-	"github.com/ironarachne/random"
-)
-
 // NameGenerator is a set of names to use
 type NameGenerator struct {
 	MaleFirstNames   []string
@@ -36,7 +32,7 @@ func NameGeneratorFromType(origin, gender string) NameGenerator {
 
 // LastName returns a last name
 func (gen NameGenerator) LastName() string {
-	return random.Item(gen.LastNames)
+	return RandomItem(gen.LastNames)
 }
 
 // FirstName returns a first name
@@ -48,7 +44,7 @@ func (gen NameGenerator) FirstName(gender string) string {
 		firstNames = append(firstNames, gen.FemaleFirstNames...)
 	}
 
-	return random.Item(firstNames)
+	return RandomItem(firstNames)
 }
 
 // CompleteName returns a complete name

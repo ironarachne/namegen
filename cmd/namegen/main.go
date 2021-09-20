@@ -6,9 +6,9 @@ import (
 	"math/rand"
 	"strings"
 	"time"
+	"os"
 
 	"github.com/ironarachne/namegen"
-	"github.com/ironarachne/random"
 )
 
 func main() {
@@ -40,12 +40,13 @@ func main() {
 			"thai",
 		}
 		fmt.Printf("Available name lists: \n%s\n\n", strings.Join(nameLists, "\n"))
+		os.Exit(0)
 	}
 
 	if *randomSeed == "none" {
 		rand.Seed(time.Now().UnixNano())
 	} else {
-		random.SeedFromString(*randomSeed)
+		namegen.RandomSeedFromString(*randomSeed)
 	}
 
 	generator := namegen.NameGeneratorFromType(*origin, *gender)
