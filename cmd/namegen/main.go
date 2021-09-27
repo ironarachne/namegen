@@ -22,7 +22,7 @@ func main() {
 
 	flag.Parse()
 
-	if *list == true {
+	if *list {
 		nameLists := []string{
 			"anglosaxon",
 			"dutch",
