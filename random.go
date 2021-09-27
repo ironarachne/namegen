@@ -49,7 +49,10 @@ func RandomItemInCollection(item string, collection []string) bool {
 // RandomSeedFromString uses a string to seed the random number generator
 func RandomSeedFromString(source string) {
 	h := md5.New()
-	io.WriteString(h, source)
+	_, err := io.WriteString(h, source)
+	if err != nil {
+		panic(err)
+	}
 	seed := binary.BigEndian.Uint64(h.Sum(nil))
 	rand.Seed(int64(seed))
 }
