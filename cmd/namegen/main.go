@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"math/rand"
+	"os"
 	"strings"
 	"time"
-	"os"
 
 	"github.com/ironarachne/namegen"
 )
@@ -35,6 +35,7 @@ func main() {
 			"indonesian",
 			"japanese",
 			"korean",
+			"norwegian",
 			"russian",
 			"spanish",
 			"thai",
