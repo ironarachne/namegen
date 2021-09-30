@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"math/rand"
+	"os"
 	"strings"
 	"time"
-	"os"
 
 	"github.com/ironarachne/namegen"
 )
@@ -37,6 +37,7 @@ func main() {
 			"korean",
 			"russian",
 			"spanish",
+			"swedish",
 			"thai",
 		}
 		fmt.Printf("Available name lists: \n%s\n\n", strings.Join(nameLists, "\n"))
