@@ -37,6 +37,7 @@ func main() {
 			"korean",
 			"russian",
 			"spanish",
+			"swedish",
 			"thai",
 			"portuguese",
 			"hindu",
