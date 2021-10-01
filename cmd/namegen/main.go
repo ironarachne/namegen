@@ -33,6 +33,7 @@ func main() {
 			"german",
 			"greek",
 			"indonesian",
+			"italian",
 			"japanese",
 			"korean",
 			"russian",
