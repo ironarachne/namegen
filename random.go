@@ -3,13 +3,23 @@ package namegen
 import (
 	"crypto/md5"
 	"encoding/binary"
+	"errors"
 	"io"
 	"math/rand"
 )
 
+var (
+	ErrorEmptyItems = errors.New("empty items")
+)
+
 // RandomItem returns a random string from an array of strings
-func RandomItem(items []string) string {
-	return items[rand.Intn(len(items))]
+func RandomItem(items []string) (string, error) {
+	itemsLen := len(items)
+	if itemsLen <= 0 {
+		return "", ErrorEmptyItems
+	}
+
+	return items[rand.Intn(itemsLen)], nil
 }
 
 // RandomItemFromThresholdMap returns a random weighted string
