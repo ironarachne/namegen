@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"flag"
 	"fmt"
 	"math/rand"
@@ -29,22 +30,23 @@ func main() {
 			"dwarf",
 			"elf",
 			"english",
+			"estonian",
 			"fantasy",
+      "finnish",
 			"german",
 			"greek",
+			"hindu",
 			"indonesian",
 			"italian",
 			"japanese",
 			"korean",
+			"nepalese",
 			"norwegian",
+			"portuguese",
 			"russian",
 			"spanish",
 			"swedish",
 			"thai",
-			"portuguese",
-			"hindu",
-			"nepalese",
-			"finnish",
 		}
 		fmt.Printf("Available name lists: \n%s\n\n", strings.Join(nameLists, "\n"))
 		os.Exit(0)
@@ -59,19 +61,25 @@ func main() {
 	generator := namegen.NameGeneratorFromType(*origin, *gender)
 
 	output := ""
+	var err error
 	for i := 0; i < *numberOfNames; i++ {
 
 		switch *mode {
 		case "full":
-			output = generator.CompleteName(*gender)
+			output, err = generator.CompleteName(*gender)
 		case "firstname":
-			output = generator.FirstName(*gender)
+			output, err = generator.FirstName(*gender)
 		case "lastname":
-			output = generator.LastName()
+			output, err = generator.LastName()
 		default:
 			output = fmt.Sprintf("Unsupported generation mode %s, supported modes: full, firstname, lastname", *mode)
 		}
 
+		if err != nil && errors.Is(err, namegen.ErrorEmptyItems) {
+			output = fmt.Sprintf("Unsupported origin %s\nUse \"namegen -l\" to see supported origins", *origin)
+		}
+
 		fmt.Println(output)
 	}
+
 }
