@@ -38,12 +38,12 @@ func NameGeneratorFromType(origin, gender string) NameGenerator {
 }
 
 // LastName returns a last name
-func (gen NameGenerator) LastName() string {
+func (gen NameGenerator) LastName() (string, error) {
 	return RandomItem(gen.LastNames)
 }
 
 // FirstName returns a first name
-func (gen NameGenerator) FirstName(gender string) string {
+func (gen NameGenerator) FirstName(gender string) (string, error) {
 	firstNames := gen.MaleFirstNames
 	if gender == "female" {
 		firstNames = gen.FemaleFirstNames
@@ -55,6 +55,17 @@ func (gen NameGenerator) FirstName(gender string) string {
 }
 
 // CompleteName returns a complete name
-func (gen NameGenerator) CompleteName(gender string) string {
-	return gen.FirstName(gender) + " " + gen.LastName()
+func (gen NameGenerator) CompleteName(gender string) (string, error) {
+	firstName, err := gen.FirstName(gender)
+	if err != nil {
+		return "", err
+	}
+
+	lastName, err := gen.LastName()
+	if err != nil {
+		return "", err
+	}
+
+	fullname := firstName + " " + lastName
+	return fullname, nil
 }
