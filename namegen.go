@@ -7,6 +7,19 @@ type NameGenerator struct {
 	LastNames        []string
 }
 
+func removeDuplicateNames(names []string) []string {
+	keys := make(map[string]bool)
+	list := []string{}
+
+	for _, entry := range names {
+		if _, value := keys[entry]; !value {
+			keys[entry] = true
+			list = append(list, entry)
+		}
+	}
+	return list
+}
+
 // NameGeneratorFromType sets up types of names
 func NameGeneratorFromType(origin, gender string) NameGenerator {
 	nameGenerators := map[string]NameGenerator{
@@ -34,7 +47,13 @@ func NameGeneratorFromType(origin, gender string) NameGenerator {
 		"thai":       {thaiMaleFirstNames, thaiFemaleFirstNames, thaiLastNames},
 	}
 
-	return nameGenerators[origin]
+	generatorByOrigin := nameGenerators[origin]
+	nameGenerator := NameGenerator{
+		MaleFirstNames:   removeDuplicateNames(generatorByOrigin.MaleFirstNames),
+		FemaleFirstNames: removeDuplicateNames(generatorByOrigin.FemaleFirstNames),
+		LastNames:        removeDuplicateNames(generatorByOrigin.LastNames),
+	}
+	return nameGenerator
 }
 
 // LastName returns a last name
