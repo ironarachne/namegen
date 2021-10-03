@@ -32,6 +32,7 @@ func main() {
 			"english",
 			"estonian",
 			"fantasy",
+      "finnish",
 			"german",
 			"greek",
 			"hindu",
