@@ -41,6 +41,7 @@ func main() {
 			"italian",
 			"japanese",
 			"korean",
+			"mayan",
 			"nepalese",
 			"norwegian",
 			"portuguese",
