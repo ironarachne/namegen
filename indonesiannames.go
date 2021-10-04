@@ -70,7 +70,7 @@ var (
 		"Made", "Mahardika", "Mahendra", "Martin", "Michael", "Mukti", "Mulia", "Mulya", "Nanang", "Nanda", "Noor", "Nova",
 		"Nugraha", "Nugroho", "Nur", "Nyoman", "Okta", "Pandu", "Panji", "Permata", "Prabowo", "Pradana", "Pradipta", "Pramono",
 		"Prasetya", "Prasetyo", "Pratama", "Pratomo", "Pribadi", "Prima", "Priyo", "Puji", "Purba", "Purnama", "Purnomo",
-		"Purwanto", "Putra", "Putro", "Rachmad", "Rachmat", "Raditya", "Ragil", "Rahadian", "Rahmad", "Rama", "Randy", "Rangga",
+		"Purwanto", "Putra", "Putro", "Rachmad", "Rachmat", "Raditya", "Ragil", "Rahadian", "Rahardian", "Rahmad", "Rama", "Randy", "Rangga",
 		"Rendy", "Restu", "Reza", "Rian", "Ricky", "Ridha", "Ridho", "Ridwan", "Rifki", "Riki", "Rinaldi", "Rio", "Riski", "Risky",
 		"Riyadi", "Riyanto", "Rizal", "Rizki", "Rizky", "Rizqi", "Robby", "Romi", "Ronald", "Roni", "Rony", "Roy", "Roza", "Rudi",
 		"Rudy", "Rully", "Ryan", "Sahat", "Sakti", "Samuel", "Sandi", "Sandy", "Sanjaya", "Santoso", "Sapta", "Sapto", "Saputra",
@@ -79,7 +79,7 @@ var (
 		"Susilo", "Sutrisno", "Syah", "Syahputra", "Syahrul", "Syaiful", "Syam", "Syamsul", "Teguh", "Tommy", "Toni", "Tri", "Tria",
 		"Tulus", "Utama", "Utomo", "Wahyu", "Wahyudi", "Wardhana", "Wibisono", "Wibowo", "Wicaksono", "Widhi", "Widi", "Widodo",
 		"Wijaya", "Wijayanto", "Willy", "Wira", "Wirawan", "Wisnu", "Yan", "Yanuar", "Yoga", "Yogi", "Yohanes", "Yuda", "Yudha",
-		"Yudhi", "Yudi", "Yulianto",
+		"Yudhi", "Yudi", "Yulianto", "Genta", "Gibran", "Panca", "Raka"
 	}
 
 	indonesianLastNames = []string{
@@ -96,6 +96,6 @@ var (
 		"Riyadi", "Riyanto", "Rizki", "Rizky", "Rizqi", "Samuel", "Sanjaya", "Santoso", "Saputra", "Saputro", "Satria", "Satrio", "Satya",
 		"Septian", "Septiana", "Setia", "Setiadi", "Setiawan", "Setyawan", "Sofyan", "Sugeng", "Sulastri", "Sulistyo", "Supriyanto",
 		"Suryadi", "Susanto", "Susilo", "Sutrisno", "Syahputra", "Syahrul", "Syaiful", "Syam", "Utama", "Utomo", "Wahyudi", "Wardhana",
-		"Wibisono", "Wibowo", "Wicaksono", "Widodo", "Wijaya", "Wijayanto", "Wirawan", "Yanuar", "Yohanes", "Yulianto",
+		"Wibisono", "Wibowo", "Wicaksono", "Widodo", "Wijaya", "Wijayanto", "Wirawan", "Yanuar", "Yohanes", "Yulianto", "Dirga", "Perdana", "Pramana"
 	}
 )
