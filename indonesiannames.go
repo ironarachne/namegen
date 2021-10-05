@@ -79,7 +79,7 @@ var (
 		"Susilo", "Sutrisno", "Syah", "Syahputra", "Syahrul", "Syaiful", "Syam", "Syamsul", "Teguh", "Tommy", "Toni", "Tri", "Tria",
 		"Tulus", "Utama", "Utomo", "Wahyu", "Wahyudi", "Wardhana", "Wibisono", "Wibowo", "Wicaksono", "Widhi", "Widi", "Widodo",
 		"Wijaya", "Wijayanto", "Willy", "Wira", "Wirawan", "Wisnu", "Yan", "Yanuar", "Yoga", "Yogi", "Yohanes", "Yuda", "Yudha",
-		"Yudhi", "Yudi", "Yulianto", "Genta", "Gibran", "Panca", "Raka"
+		"Yudhi", "Yudi", "Yulianto", "Genta", "Gibran", "Panca", "Raka",
 	}
 
 	indonesianLastNames = []string{
@@ -96,6 +96,6 @@ var (
 		"Riyadi", "Riyanto", "Rizki", "Rizky", "Rizqi", "Samuel", "Sanjaya", "Santoso", "Saputra", "Saputro", "Satria", "Satrio", "Satya",
 		"Septian", "Septiana", "Setia", "Setiadi", "Setiawan", "Setyawan", "Sofyan", "Sugeng", "Sulastri", "Sulistyo", "Supriyanto",
 		"Suryadi", "Susanto", "Susilo", "Sutrisno", "Syahputra", "Syahrul", "Syaiful", "Syam", "Utama", "Utomo", "Wahyudi", "Wardhana",
-		"Wibisono", "Wibowo", "Wicaksono", "Widodo", "Wijaya", "Wijayanto", "Wirawan", "Yanuar", "Yohanes", "Yulianto", "Dirga", "Perdana", "Pramana"
+		"Wibisono", "Wibowo", "Wicaksono", "Widodo", "Wijaya", "Wijayanto", "Wirawan", "Yanuar", "Yohanes", "Yulianto", "Dirga", "Perdana", "Pramana",
 	}
 )
