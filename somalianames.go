@@ -1,7 +1,7 @@
 package namegen
 
 var (
-	somaliMaleLastName = []string{
+	somaliaMaleFirstNames = []string{
 		"Aabbediid",
 		"Abroone",
 		"Abshir",
@@ -310,7 +310,7 @@ var (
 		"yunis",
 	}
 
-	somaliFemaleFirstName = []string{
+	somaliaFemaleFirstNames = []string{
 		"Absan",
 		"Almas",
 		"Aragsan",
@@ -451,7 +451,7 @@ var (
 
 	}
 
-	somaliaLastName = []string{
+	somaliaLastNames = []string{
 		"Ali",
 		"Abdi",
 		"Mohamed",
