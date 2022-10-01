@@ -3,7 +3,7 @@ package namegen
 
 var (
 	
-	arabicMaleFirstName = []string{
+	arabicMaleFirstNames = []string{
 		"إيبر",
 		"اليسع",
 		"عاموس",
@@ -89,7 +89,7 @@ var (
 		"زَكَرِيَّا",
 	}
 
-	arabicFemaleFirstName = []string{
+	arabicFemaleFirstNames = []string{
 		"البيرة",
 		"أبيها",
 		"أديلا",
