@@ -13,6 +13,8 @@ system.
 
 There are 4 steps to adding a new name generator to this project.
 
+**Note:** There is a good guide to name formats here: [https://www.fbiic.gov/public/2008/nov/Naming_practice_guide_UK_2006.pdf](https://www.fbiic.gov/public/2008/nov/Naming_practice_guide_UK_2006.pdf)
+
 ### Step one: add name lists as global variables
 
 First, create a new .go file for your name lists. Within it,

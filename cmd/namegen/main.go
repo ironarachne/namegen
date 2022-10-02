@@ -50,6 +50,8 @@ func main() {
 			"swedish",
 			"thai",
 			"ukrainian",
+			"somalia",
+			"arabic",
 		}
 		fmt.Printf("Available name lists: \n%s\n\n", strings.Join(nameLists, "\n"))
 		os.Exit(0)
