@@ -38,6 +38,7 @@ func main() {
 			"greek",
 			"hindu",
 			"indonesian",
+			"irish",
 			"italian",
 			"japanese",
 			"korean",
