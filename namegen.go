@@ -28,6 +28,7 @@ func NameGeneratorFromType(origin, gender string) NameGenerator {
 		"italian":    {italianMaleFirstNames, italianFemaleFirstNames, italianLastNames},
 		"japanese":   {japaneseMaleFirstNames, japaneseFemaleFirstNames, japaneseLastNames},
 		"korean":     {koreanMaleFirstNames, koreanFemaleFirstNames, koreanLastNames},
+		"maori":      {maoriMaleFirstNames, maoriFemaleFirstNames, maoriLastNames},
 		"mayan":      {mayanMaleFirstNames, mayanFemaleFirstNames, mayanLastNames},
 		"nepalese":   {nepaleseMaleFirstNames, nepaleseFemaleFirstNames, nepaleseLastNames},
 		"norwegian":  {norwegianMaleFirstNames, norwegianFemaleFirstNames, norwegianLastNames},
@@ -39,8 +40,8 @@ func NameGeneratorFromType(origin, gender string) NameGenerator {
 		"ukrainian":  {ukrainianMaleFirstNames, ukrainianFemaleFirstNames, ukrainianLastNames},
 		"somalia":	  {somaliaMaleFirstNames, somaliaFemaleFirstNames, somaliaLastNames},
 		"arabic":	  {arabicMaleFirstNames, arabicFemaleFirstNames, arabicLastNames},
-    "hawaiian":   {hawaiianMaleFirstNames, hawaiianFemaleFirstNames, hawaiianLastNames},
-    "turkish":	  {turkishMaleFirstNames, turkishFemaleFirstNames, turkishLastNames},
+		"hawaiian":   {hawaiianMaleFirstNames, hawaiianFemaleFirstNames, hawaiianLastNames},
+		"turkish":	  {turkishMaleFirstNames, turkishFemaleFirstNames, turkishLastNames},
 	}
 
 	return nameGenerators[origin]
