@@ -1,6 +1,7 @@
 package namegen
 
-var(polishMaleFirstNames=[]string{
+var(
+	polishMaleFirstNames = []string{
 	"Adam", "Aleksander", "Andrzej", "Antoni", "Arkadiusz", "Artur", "Bartłomiej", "Bartosz", "Cezary", "Damian",
 	"Dariusz", "Daniel", "Dawid", "Dominik", "Filip", "Grzegorz", "Hubert", "Jacek", "Jakub", "Jan",
 	"Jarosław", "Jędrzej", "Jerzy", "Kacper", "Kamil", "Karol", "Krzysztof", "Łukasz", "Maciej", "Marcin",
@@ -29,8 +30,8 @@ var(polishMaleFirstNames=[]string{
 	"Nikodem", "Norbert", "Oskar", "Patryk", "Paweł", "Piotr", "Radosław", "Rafał", "Remigiusz", "Robert",
 	"Ryszard", "Sebastian", "Seweryn", "Sławomir", "Stanisław", "Stefan", "Sylwester", "Tadeusz", "Teodor", "Tobiasz",
 	"Tomasz",
-	},
-	polishFemaleFirstNames := []string{
+	}
+	polishFemaleFirstNames = []string{
 	"Adela", "Agnieszka", "Alicja", "Alina", "Amelia", "Anastazja", "Anna", "Antonina", "Barbara", "Beata",
 	"Bożena", "Cecylia", "Dagmara", "Danuta", "Dominika", "Dorota", "Edyta", "Eliza", "Elżbieta", "Emilia",
 	"Ewa", "Gabriela", "Grażyna", "Halina", "Hanna", "Iga", "Irena", "Irmina", "Iwona", "Jadwiga",
@@ -67,8 +68,8 @@ var(polishMaleFirstNames=[]string{
 	"Laura", "Lidia", "Liliana", "Lucja", "Magdalena", "Małgorzata", "Maria", "Marta", "Martyna", "Mieczysława",
 	"Milena", "Monika", "Natalia", "Nina", "Ola", "Olga", "Patrycja", "Paulina", "Renata", "Sabina",
 	"Sandra", "Sylwia", "Teresa", "Urszula", "Wanda", "Weronika", "Wiesława", "Zofia", "Żaneta",
-},
-polishLastNames := []string{
+}
+polishLastNames = []string{
 	"Adamczyk", "Adamski", "Bąk", "Baran", "Bartosz", "Bednarek", "Białas", "Bielecki", "Bielski", "Bogdan",
 	"Brzeziński", "Chmielewski", "Czarnecki", "Czech", "Duda", "Dziedzic", "Gajos", "Głowacki", "Górka", "Grabowski",
 	"Grzelak", "Jabłoński", "Jankowski", "Janowski", "Kaczmarek", "Kalinowski", "Kamiński", "Kowalczyk", "Kowalewski", "Kowalik",
