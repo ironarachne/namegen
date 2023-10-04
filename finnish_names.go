@@ -9648,7 +9648,7 @@ var (
 		"Åge",
 		"Ämir",
 		"Änäs",
-}
+	}
 
 	finnishFemaleFirstNames = []string{
 		"Maria",
@@ -22151,8 +22151,7 @@ var (
 		"Zuhra",
 		"Zuhur",
 		"Äänis",
-  
-}
+	}
 
 	finnishLastNames = []string{
 		"Aadan",
@@ -45034,6 +45033,6 @@ var (
 		"Özkan",
 		"Öztürk",
 		"Öörni",
-		"Ünal", 
-}
+		"Ünal",
+	}
 )
