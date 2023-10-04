@@ -448,7 +448,6 @@ var (
 		"Xalan",
 		"Xareedo",
 		"Xiddig",
-
 	}
 
 	somaliaLastNames = []string{

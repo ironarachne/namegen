@@ -1,8 +1,6 @@
 package namegen
 
-
 var (
-	
 	arabicMaleFirstNames = []string{
 		"إيبر",
 		"اليسع",
@@ -205,6 +203,4 @@ var (
 		"قادر",
 		"رحيم",
 	}
-
 )
-

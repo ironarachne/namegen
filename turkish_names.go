@@ -183,8 +183,7 @@ var (
 		"Fevzi",
 		"Feyyaz",
 		"Feyzi",
-
-}
+	}
 	turkishFemaleFirstNames = []string{
 		"Adile",
 		"Aigul",
@@ -304,7 +303,6 @@ var (
 		"Semra",
 		"Şenay",
 		"Serap",
-
 	}
 
 	turkishLastNames = []string{
