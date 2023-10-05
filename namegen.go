@@ -45,6 +45,7 @@ func NameGeneratorFromType(origin, gender string) NameGenerator {
 		"turkish":    {turkishMaleFirstNames, turkishFemaleFirstNames, turkishLastNames},
 		"serbian":    {serbianMaleFirstNames, serbianFemaleFirstNames, serbianLastNames},
 		"nigerian":   {nigerianMaleFirstNames, nigerianFemaleFirstNames, nigerianLastNames},
+		"polish":	{polishMaleFirstNames,polishFemaleFirstNames,polishLastNames},
 	}
 
 	return nameGenerators[origin]
